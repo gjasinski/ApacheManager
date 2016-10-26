@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Apache_Manager.Controls.AdditionalControls.firstConfiguration"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="612" d:DesignWidth="890">
+    <Grid>
+        <Label  Content="Adres e-mail" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,50,0,0" Foreground="White"/>
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Margin="268,50,0,0"/>
+        <Label Content="Serwe SMTP " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,100,0,0" Foreground="White"/>
+        <TextBox x:Name="tbSmtpServer" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Margin="268,100,0,0"/>
+        <Label Content="Lokalizacja Apacha" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,150,0,0" Foreground="White"/>
+        <Grid x:Name="gridapache" Height="25" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,150,0,0"></Grid>
+        <Label Content="Lokalizacja archwiwum logów" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,200,0,0" Foreground="White"/>
+        <Grid x:Name="gridlogs" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="300" Margin="268,200,0,0"></Grid>
+        <Label Content="Lokalizacja kopi zapasowej" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,250,0,0" Foreground="White"/>
+        <Grid x:Name="gridbackup" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="300" Margin="268,250,0,0"></Grid>
+        <Label Content="Service name " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,300,0,0" Foreground="White"/>
+        <TextBox x:Name="tbServiceName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" Margin="268,300,0,0"/>
+        <Label Content="Hasło do ustawień programu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,350,0,0" Foreground="White"/>
+        <PasswordBox x:Name="pbMasterPass" HorizontalAlignment="Left" Height="23" Width="300" Margin="268,350,0,0" VerticalAlignment="Top"/>
+        <Label Content="Powtórz hasło" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,400,0,0" Foreground="White"/>
+        <PasswordBox x:Name="pbMasterPassCheck" HorizontalAlignment="Left" Height="23" Width="300" Margin="268,400,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="apply" Content="ZASTOSUJ" Style="{StaticResource MetroButton}" HorizontalAlignment="Left" Margin="335,545,0,0" VerticalAlignment="Top"  Width="220" Height="50" Click="apply_Click"/>
+    </Grid>
+</UserControl>

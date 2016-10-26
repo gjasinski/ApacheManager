@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Apache_Manager.Controls.Logs.showLog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="612" d:DesignWidth="890">
+    <Grid>
+        <Button x:Name="back" Content="COFNIJ" Style="{StaticResource MetroButton}" HorizontalAlignment="Left" Margin="625,540,0,0" VerticalAlignment="Top" Click="back_Click" Width="220" Height="50"/>
+        <RichTextBox x:Name="rtbShowLog" HorizontalAlignment="Left" Height="471" VerticalAlignment="Top" Width="805" Margin="40,35,0,0" IsDocumentEnabled="True" FontSize="10" MinWidth="10" VerticalScrollBarVisibility="Auto" IsReadOnly="True">
+            <FlowDocument LineHeight="1" FontSize="12">
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="addtoarchove" Content="ARCHIWIZUJ LOG" Style="{StaticResource MetroButton}" HorizontalAlignment="Left" Margin="335,540,0,0" VerticalAlignment="Top"  Width="220" Height="50" Click="addtoarchove_Click"/>
+        <Button x:Name="clearlog" Content="WYCZYŚĆ LOG" Style="{StaticResource MetroButton}" HorizontalAlignment="Left" Margin="45,540,0,0" VerticalAlignment="Top"  Width="220" Height="50" Click="clearlog_Click"/>
+        <TextBox x:Name="tbdirectory" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="805" Margin="40,10,0,0" IsReadOnly="True"/>
+
+    </Grid>
+</UserControl>
